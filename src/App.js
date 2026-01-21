@@ -1,11 +1,12 @@
 import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { 
-  Calendar, Clock, Cat, ChevronLeft, Check, Scissors, Star, UserRound,
-  Wind, Ban, HeartPulse, AlertTriangle, Waves, Zap, Lock, LogOut, 
-  Droplets, ShieldCheck, Leaf, MessageCircle, Plus, XCircle, 
+  Calendar, Clock, Cat, ChevronLeft, Check, Scissors, Star, UserRound, 
+  Wind, Ban, HeartPulse, AlertTriangle, Waves, Zap, Lock, LogOut,
+  Droplets, ShieldCheck, Leaf, MessageCircle, Plus, XCircle,
   Trash2, CheckCircle, Info, BarChart3, Banknote, AlertCircle, Sparkles, Gem,
   CalendarDays, Filter, Download, ShieldAlert, History, PlusCircle, Timer,
-  PawPrint, Copy, Phone, ExternalLink, ChevronRight, LayoutList, Grid, CalendarOff, Lightbulb, Search, FileText, X, AlertOctagon, Loader2, Sparkle
+  PawPrint, Copy, Phone, ExternalLink, ChevronRight, LayoutList, Grid, CalendarOff,
+  Lightbulb, Search, FileText, X, AlertOctagon, Loader2, Sparkle
 } from 'lucide-react';
 
 // Firebase imports
