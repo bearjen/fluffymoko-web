@@ -28,7 +28,7 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+const db = null;
 const analytics = getAnalytics(app);
 // 初始化指令
 const app = initializeApp(firebaseConfig);
