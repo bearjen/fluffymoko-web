@@ -28,12 +28,7 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const db = null;
-const analytics = getAnalytics(app);
-// 初始化指令
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
-const auth = getAuth(app);
+const db = null; const auth = null;
 const COATS = [
   { id: 'short', label: '短毛（單層毛）', desc: '米克斯、德文、美短、暹羅', prices: { basic: 1100, advanced: 1500 } },
   { id: 'medium', label: '中長毛（雙層毛）', desc: '英短、曼赤肯、加菲', prices: { basic: 1300, advanced: 2000 } },
