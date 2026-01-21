@@ -16,7 +16,20 @@ import { getFirestore, collection, doc, setDoc, onSnapshot, query, deleteDoc, up
 
 // --- 全域配置 ---
 const CONFIG = { lineId: "@051yzbua", adminPw: "moko2025" };
+// --- Firebase 鑰匙設定 ---
+const firebaseConfig = {
+  apiKey: "AIzaSyB-你的金鑰", // 建議之後換成你自己在 Firebase 申請的
+  authDomain: "fluffymoko-web.firebaseapp.com",
+  projectId: "fluffymoko-web",
+  storageBucket: "fluffymoko-web.appspot.com",
+  messagingSenderId: "123456789",
+  appId: "1:123456789:web:abcdefg"
+};
 
+// 初始化指令
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+const auth = getAuth(app);
 const COATS = [
   { id: 'short', label: '短毛（單層毛）', desc: '米克斯、德文、美短、暹羅', prices: { basic: 1100, advanced: 1500 } },
   { id: 'medium', label: '中長毛（雙層毛）', desc: '英短、曼赤肯、加菲', prices: { basic: 1300, advanced: 2000 } },
