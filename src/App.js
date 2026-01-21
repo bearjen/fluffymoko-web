@@ -18,14 +18,18 @@ import { getFirestore, collection, doc, setDoc, onSnapshot, query, deleteDoc, up
 const CONFIG = { lineId: "@051yzbua", adminPw: "moko2025" };
 // --- Firebase 鑰匙設定 ---
 const firebaseConfig = {
-  apiKey: "AIzaSyB-你的金鑰", // 建議之後換成你自己在 Firebase 申請的
-  authDomain: "fluffymoko-web.firebaseapp.com",
-  projectId: "fluffymoko-web",
-  storageBucket: "fluffymoko-web.appspot.com",
-  messagingSenderId: "123456789",
-  appId: "1:123456789:web:abcdefg"
+  apiKey: "AIzaSyCiIP3_6QIm35WIQxw9S2BcLdbfCpenqxA",
+  authDomain: "fluffymoko-5f3a0.firebaseapp.com",
+  projectId: "fluffymoko-5f3a0",
+  storageBucket: "fluffymoko-5f3a0.firebasestorage.app",
+  messagingSenderId: "479948499106",
+  appId: "1:479948499106:web:a24db146e2ef3018ed8ffb",
+  measurementId: "G-QYWWMHCRN9"
 };
 
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 // 初始化指令
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
